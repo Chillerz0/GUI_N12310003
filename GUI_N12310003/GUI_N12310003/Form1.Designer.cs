@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCalculator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,9 +135,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(593, 164);
+            this.button2.Location = new System.Drawing.Point(593, 143);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 51);
+            this.button2.Size = new System.Drawing.Size(156, 51);
             this.button2.TabIndex = 8;
             this.button2.Text = "按我複製至label";
             this.button2.UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(589, 140);
+            this.label2.Location = new System.Drawing.Point(699, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 21);
             this.label2.TabIndex = 9;
@@ -160,11 +161,24 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // btnCalculator
+            // 
+            this.btnCalculator.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnCalculator.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnCalculator.Location = new System.Drawing.Point(360, 187);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(126, 70);
+            this.btnCalculator.TabIndex = 11;
+            this.btnCalculator.Text = "計算機";
+            this.btnCalculator.UseVisualStyleBackColor = false;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 450);
+            this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -197,6 +211,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCalculator;
     }
 }
 

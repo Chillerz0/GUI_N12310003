@@ -59,5 +59,10 @@ namespace GUI_N12310003
         {
 
         }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+            new FormCalculator().Show();
+        }
     }
 }
