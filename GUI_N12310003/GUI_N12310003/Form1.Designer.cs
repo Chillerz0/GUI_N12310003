@@ -1,6 +1,6 @@
 ﻿namespace GUI_N12310003
 {
-    partial class Form1
+    partial class Btn_CtoF
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -40,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCalculator = new System.Windows.Forms.Button();
+            this.BtnCtoF = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +85,7 @@
             this.btn_ChangeLabel.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_ChangeLabel.Location = new System.Drawing.Point(12, 187);
             this.btn_ChangeLabel.Name = "btn_ChangeLabel";
-            this.btn_ChangeLabel.Size = new System.Drawing.Size(173, 51);
+            this.btn_ChangeLabel.Size = new System.Drawing.Size(319, 51);
             this.btn_ChangeLabel.TabIndex = 3;
             this.btn_ChangeLabel.Text = "按我切換標籤";
             this.btn_ChangeLabel.UseVisualStyleBackColor = false;
@@ -95,7 +97,7 @@
             this.btn_Counter.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Counter.Location = new System.Drawing.Point(12, 256);
             this.btn_Counter.Name = "btn_Counter";
-            this.btn_Counter.Size = new System.Drawing.Size(173, 51);
+            this.btn_Counter.Size = new System.Drawing.Size(285, 51);
             this.btn_Counter.TabIndex = 5;
             this.btn_Counter.Text = "按我+1";
             this.btn_Counter.UseVisualStyleBackColor = false;
@@ -105,7 +107,7 @@
             // 
             this.lab_Counter.AutoSize = true;
             this.lab_Counter.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lab_Counter.Location = new System.Drawing.Point(203, 266);
+            this.lab_Counter.Location = new System.Drawing.Point(303, 266);
             this.lab_Counter.Name = "lab_Counter";
             this.lab_Counter.Size = new System.Drawing.Size(28, 31);
             this.lab_Counter.TabIndex = 4;
@@ -126,7 +128,7 @@
             this.Btnbigger.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Btnbigger.Location = new System.Drawing.Point(360, 104);
             this.Btnbigger.Name = "Btnbigger";
-            this.Btnbigger.Size = new System.Drawing.Size(126, 70);
+            this.Btnbigger.Size = new System.Drawing.Size(153, 70);
             this.Btnbigger.TabIndex = 7;
             this.Btnbigger.Text = "按鈕變大";
             this.Btnbigger.UseVisualStyleBackColor = false;
@@ -167,17 +169,43 @@
             this.btnCalculator.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnCalculator.Location = new System.Drawing.Point(360, 187);
             this.btnCalculator.Name = "btnCalculator";
-            this.btnCalculator.Size = new System.Drawing.Size(126, 70);
+            this.btnCalculator.Size = new System.Drawing.Size(153, 70);
             this.btnCalculator.TabIndex = 11;
             this.btnCalculator.Text = "計算機";
             this.btnCalculator.UseVisualStyleBackColor = false;
             this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
-            // Form1
+            // BtnCtoF
+            // 
+            this.BtnCtoF.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BtnCtoF.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnCtoF.Location = new System.Drawing.Point(360, 266);
+            this.BtnCtoF.Name = "BtnCtoF";
+            this.BtnCtoF.Size = new System.Drawing.Size(153, 70);
+            this.BtnCtoF.TabIndex = 12;
+            this.BtnCtoF.Text = "期中考-攝氏轉華氏";
+            this.BtnCtoF.UseVisualStyleBackColor = false;
+            this.BtnCtoF.Click += new System.EventHandler(this.BtnCtoF_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button3.Location = new System.Drawing.Point(360, 342);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 70);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "加減";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Btn_CtoF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnCtoF);
             this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -191,7 +219,7 @@
             this.Controls.Add(this.btn_ClickMe);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Name = "Form1";
+            this.Name = "Btn_CtoF";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,6 +240,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCalculator;
+        private System.Windows.Forms.Button BtnCtoF;
+        private System.Windows.Forms.Button button3;
     }
 }
 

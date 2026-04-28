@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_N12310003
 {
-    public partial class Form1 : Form
+    public partial class Btn_CtoF : Form
     {
-        public Form1()
+        public Btn_CtoF()
         {
             InitializeComponent();
         }
@@ -63,6 +63,16 @@ namespace GUI_N12310003
         private void btnCalculator_Click(object sender, EventArgs e)
         {
             new FormCalculator().Show();
+        }
+
+        private void BtnCtoF_Click(object sender, EventArgs e)
+        {
+            new FormCtoF().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormPlusMinus().Show();
         }
     }
 }

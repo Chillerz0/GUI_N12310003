@@ -29,5 +29,10 @@ namespace GUI_N12310003
             int sum = a + b;
             label3.Text=sum.ToString();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
