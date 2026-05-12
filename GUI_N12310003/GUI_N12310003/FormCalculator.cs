@@ -24,10 +24,23 @@ namespace GUI_N12310003
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = Int32.Parse(textBox1.Text);
-            int b = Int32.Parse(textBox2.Text);
-            int sum = a + b;
-            label3.Text=sum.ToString();
+            try
+            {
+                int[]numbers = new int[10];
+                numbers[0]=1;
+                numbers[1]=2;
+                MessageBox.Show(numbers[10].ToString());
+
+                int a = Int32.Parse(textBox1.Text);
+                int b = Int32.Parse(textBox2.Text);
+                int sum = a + b;
+                label3.Text=sum.ToString();
+            }
+            
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message+"你輸入的有問題，但我不知道是哪裡錯了"); 
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
