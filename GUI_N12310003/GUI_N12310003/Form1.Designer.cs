@@ -34,7 +34,6 @@
             this.btn_ChangeLabel = new System.Windows.Forms.Button();
             this.btn_Counter = new System.Windows.Forms.Button();
             this.lab_Counter = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.Btnbigger = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.btnCalculator = new System.Windows.Forms.Button();
             this.BtnCtoF = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,15 +113,6 @@
             this.lab_Counter.TabIndex = 4;
             this.lab_Counter.Text = "0";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Btnbigger
             // 
             this.Btnbigger.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -136,20 +127,21 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(593, 143);
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.Location = new System.Drawing.Point(12, 317);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 51);
+            this.button2.Size = new System.Drawing.Size(285, 51);
             this.button2.TabIndex = 8;
             this.button2.Text = "按我複製至label";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(699, 116);
+            this.label2.Location = new System.Drawing.Point(281, 379);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 21);
             this.label2.TabIndex = 9;
@@ -157,9 +149,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(593, 115);
+            this.textBox1.Location = new System.Drawing.Point(12, 378);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(263, 22);
             this.textBox1.TabIndex = 10;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -199,11 +191,24 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(561, 104);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 70);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Timer";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Btn_CtoF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.BtnCtoF);
             this.Controls.Add(this.btnCalculator);
@@ -211,7 +216,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Btnbigger);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Counter);
             this.Controls.Add(this.lab_Counter);
             this.Controls.Add(this.btn_ChangeLabel);
@@ -234,7 +238,6 @@
         private System.Windows.Forms.Button btn_ChangeLabel;
         private System.Windows.Forms.Button btn_Counter;
         private System.Windows.Forms.Label lab_Counter;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Btnbigger;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
@@ -242,6 +245,7 @@
         private System.Windows.Forms.Button btnCalculator;
         private System.Windows.Forms.Button BtnCtoF;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

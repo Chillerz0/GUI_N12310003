@@ -74,5 +74,10 @@ namespace GUI_N12310003
         {
             new FormPlusMinus().Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new FormTimer().Show();
+        }
     }
 }
