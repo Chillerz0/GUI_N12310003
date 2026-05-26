@@ -79,5 +79,15 @@ namespace GUI_N12310003
         {
             new FormTimer().Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FormCheckBox().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new FormLayout().Show();
+        }
     }
 }

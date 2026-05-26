@@ -46,7 +46,7 @@ namespace GUI_N12310003
 
         private void button3_Click(object sender, EventArgs e)
         {
-            labCounter.Text= "0秒";
+            labCounter.Text= "0秒SS";
         }
     }
 }
