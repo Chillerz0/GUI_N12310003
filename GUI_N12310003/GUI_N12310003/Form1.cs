@@ -89,5 +89,10 @@ namespace GUI_N12310003
         {
             new FormLayout().Show();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            new FormMenu().Show();
+        }
     }
 }
