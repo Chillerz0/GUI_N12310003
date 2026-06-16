@@ -30,6 +30,46 @@ namespace GUI_N12310003
                     }
                 }
             }
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox temp = (CheckBox)c;
+                    if (temp.Checked == true)
+                    {
+                        MessageBox.Show(temp.Text);
+                    }
+                }
+            }
+
+            foreach (Control c in panel3.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox temp = (CheckBox)c;
+                    if (temp.Checked == true)
+                    {
+                        MessageBox.Show(temp.Text);
+                    }
+                }
+            }
+
+            foreach (Control c in panel4.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox temp = (CheckBox)c;
+                    if (temp.Checked == true)
+                    {
+                        MessageBox.Show(temp.Text);
+                    }
+                }
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
